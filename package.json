@@ -16,8 +16,7 @@
     "assets"
   ],
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com",
-    "access": "public"
+    "@zonikgraf:registry": "https://npm.pkg.github.com"
   },
   "repository": {
     "type": "git",
