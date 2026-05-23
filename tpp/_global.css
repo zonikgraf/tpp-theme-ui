@@ -1,0 +1,77 @@
+/* ========================================
+  ESCROLLBARS PERSONALIZADOS
+  ======================================== */
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--p-surface-300) transparent;
+}
+
+*::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--p-surface-300);
+  border-radius: 4px;
+}
+
+/* ========================================
+  FUENTES PERSONALIZADAS
+  ======================================== */
+
+@font-face {
+  font-family: "CorporateSBQ";
+  src: url("../assets/fonts/CorporateSBQ_Regular.otf") format("opentype"),
+       url("../assets/fonts/CorporateSBQ_Regular.woff2") format("woff2"),
+       url("../assets/fonts/CorporateSBQ_Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CorporateSBQ";
+  src: url("../assets/fonts/CorporateSBQ_Medium.otf") format("opentype"),
+       url("../assets/fonts/CorporateSBQ_Medium.woff2") format("woff2"),
+       url("../assets/fonts/CorporateSBQ_Medium.ttf") format("truetype");
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CorporateSBQ";
+  src: url("../assets/fonts/CorporateSBQ_Bold.otf") format("opentype"),
+       url("../assets/fonts/CorporateSBQ_Bold.woff2") format("woff2"),
+       url("../assets/fonts/CorporateSBQ_Bold.ttf") format("truetype");
+  font-weight: 900;
+  font-display: swap;
+  font-style: normal;
+}
+
+/* ========================================
+  TIPOGRAFÍA BASE
+  ======================================== */
+
+body {
+  font-size: 14px;
+  line-height: 1.15rem;
+  font-weight: 400;
+  letter-spacing: .35px;
+  font-family: "CorporateSBQ", sans-serif;
+}
+
+.p-inputtext,
+.p-textarea {
+  font-size: 0.875rem;
+}
+
+tbody tr td {
+  font-size: 0.75rem;
+}

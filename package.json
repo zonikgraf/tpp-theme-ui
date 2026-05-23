@@ -1,0 +1,26 @@
+{
+  "name": "@zonikgraf/tpp-theme-ui",
+  "version": "1.0.1",
+  "description": "Paquete centralizado de tokens de diseño, estilos y configuración de Tailwind CSS y PrimeNG para optimizar el mantenimiento y consistencia visual en todos los microfrontends del ecosistema TPP.",
+  "author": "zonikgraf",
+  "license": "MIT",
+  "exports": {
+    "./tpp.css": "./tpp/tpp.css",
+    "./tailwind": "./tailwind/tailwind.preset.js",
+    "./primeng": "./primeng/theme.ts"
+  },
+  "files": [
+    "tpp",
+    "tailwind",
+    "primeng",
+    "assets"
+  ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com",
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zonikgraf/tpp-theme-ui.git"
+  }
+}

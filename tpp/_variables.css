@@ -1,0 +1,17 @@
+:root {
+  /* Layout TPP */
+  --tpp-section-width: 1400px;
+  --tpp-filter-width: 350px;
+
+  /* Sidebar */
+  --width-sidebar: 270px;
+  --width-sidebar-mobile: 76px;
+  --height-header: 54px;
+
+  /* FullCalendar */
+  --fc-border-color: var(--p-surface-100);
+
+  /* Icon size */
+  --p-icon-size: 0.875rem;
+
+}
