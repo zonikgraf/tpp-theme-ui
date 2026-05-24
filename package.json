@@ -20,7 +20,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/zonikgraf/tpp-theme-ui.git"
+    "url": "git+https://github.com/zonikgraf/tpp-theme-ui.git"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
