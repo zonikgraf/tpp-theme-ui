@@ -23,6 +23,6 @@
     "url": "git+https://github.com/zonikgraf/tpp-theme-ui.git"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+    "@zonikgraf:registry": "https://npm.pkg.github.com"
   }
 }
