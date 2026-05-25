@@ -44,12 +44,6 @@
   color: var(--p-surface-800);
 }
 
-@media (min-width: 768px) {
-  .tpp-section-title {
-    font-size: 1.875rem;
-  }
-}
-
 .tpp-section-body {
   display: flex;
   flex-direction: column;
