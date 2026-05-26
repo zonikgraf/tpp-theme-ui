@@ -1,0 +1,31 @@
+.p-inputtext,
+.p-textarea,
+.p-button {
+  font-size: 0.875rem;
+}
+
+.p-button-lg,
+.p-inputtext-lg {
+  border-radius: 0.5rem;
+}
+
+.p-dialog {
+  max-width: calc(100% - 1.5rem);
+}
+
+.p-dialog-header {
+  border: none;
+  background-color: var(--p-surface-100);
+  border-bottom: 1px solid var(--p-surface-200);
+  border-top-left-radius: 0.75rem;
+  border-top-right-radius: 0.75rem;
+}
+
+.p-dialog.p-dialog-maximized .p-dialog-header {
+  border-radius: 0;
+}
+
+.p-tag-label {
+  text-transform: capitalize;
+  white-space: nowrap;
+}

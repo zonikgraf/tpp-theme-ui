@@ -1,3 +1,9 @@
 @import './_variables.css';
 @import './_global.css';
-@import './_components.css';
+@import './_shadows.css';
+@import './_section.css';
+@import './_card.css';
+@import './_step.css';
+@import './_table.css';
+@import './_form.css';
+@import './_primeng-overrides.css';

@@ -1,0 +1,19 @@
+.tpp-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.tpp-label {
+  font-weight: 600;
+  color: var(--p-surface-800);
+}
+
+.tpp-label-required::after {
+  content: "*";
+  color: var(--p-red-500);
+  font-size: 0.875rem;
+  line-height: 1;
+  display: inline-block;
+  padding-left: 0.25rem;
+}

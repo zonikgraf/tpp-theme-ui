@@ -1,0 +1,37 @@
+.tpp-card {
+  background-color: white;
+  box-shadow: 0 1px 2px 0 rgba(157, 163, 169, 0.06);
+  border: 1px solid var(--p-surface-100);
+  border-radius: 0.75rem;
+  margin-top: 1rem;
+}
+
+.tpp-card-body {
+  padding: 1rem;
+}
+
+.tpp-card-footer {
+  gap: 1rem;
+  padding: 1rem;
+  position: sticky;
+  bottom: 0;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-color: white;
+  border-bottom-left-radius: 0.75rem;
+  border-bottom-right-radius: 0.75rem;
+  border-top: 1px solid var(--p-surface-100);
+}
+
+@media (min-width: 768px) {
+  .tpp-card-body {
+    padding: 1.5rem;
+  }
+
+  .tpp-card-footer {
+    flex-direction: row;
+    padding: 1rem 1.5rem;
+  }
+}

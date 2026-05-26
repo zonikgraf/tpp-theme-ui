@@ -1,0 +1,80 @@
+.tpp-section {
+  padding: 1rem;
+}
+
+.tpp-section-header {
+  display: flex;
+  align-items: center;
+  position: relative;
+  gap: 0.5rem;
+}
+
+.tpp-section-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  color: var(--p-surface-800);
+}
+
+.tpp-section-body {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.tpp-section-body-left {
+  border-bottom: 1px solid var(--p-surface-100);
+  padding-bottom: 1.5rem;
+}
+
+.tpp-section-right {
+  width: 100%;
+}
+
+.tpp-section-body-title {
+  font-size: 1.25rem;
+  margin-bottom: 0.25rem;
+  font-weight: 600;
+  color: var(--p-surface-800);
+}
+
+.tpp-toolbar-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+  margin-top: 1rem;
+}
+
+.tpp-button-group {
+  display: flex;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .tpp-button-group {
+    width: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .tpp-section {
+    padding: 1.5rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .tpp-section-body {
+    flex-direction: row;
+  }
+
+  .tpp-section-body-left {
+    border-bottom: 0;
+    width: 25%;
+  }
+
+  .tpp-section-right {
+    width: 75%;
+  }
+}

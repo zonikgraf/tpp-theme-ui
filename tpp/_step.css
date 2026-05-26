@@ -1,0 +1,30 @@
+.tpp-step-footer {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem 1.5rem;
+  border-top: 1px solid var(--p-surface-100);
+  background-color: white;
+  position: sticky;
+  bottom: 0;
+  z-index: 10;
+  border-bottom-left-radius: 0.75rem;
+  border-bottom-right-radius: 0.75rem;
+}
+
+.tpp-step-body {
+  display: block;
+  border-top: 1px solid var(--p-surface-100);
+  padding: 1.5rem 2rem;
+}
+
+@media (min-width: 768px) {
+  .tpp-step-footer {
+    flex-direction: row;
+  }
+
+  .tpp-step-body {
+    padding: 2rem 0;
+  }
+}
