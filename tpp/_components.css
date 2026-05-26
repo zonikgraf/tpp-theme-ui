@@ -21,12 +21,12 @@
    ======================================== */
 
 .tpp-section {
-  padding: 1rem 1.5rem;
+  padding: 1rem;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 768px) {
   .tpp-section {
-    padding: 1.5rem 2rem;
+    padding: 1.5rem;
   }
 }
 
@@ -122,12 +122,12 @@
 }
 
 .tpp-card-body {
-  padding: 1rem 1.5rem;
+  padding: 1rem;
 }
 
 @media (min-width: 768px) {
   .tpp-card-body {
-    padding: 1.5rem 2rem;
+    padding: 1.5rem;
   }
 }
 
@@ -258,7 +258,7 @@ thead tr th {
 
 .tpp-label-required::after {
   content: "*";
-  color: #DC143C;
+  color: var(--p-red-500);
   font-size: 0.875rem;
   line-height: 1;
   display: inline-block;
