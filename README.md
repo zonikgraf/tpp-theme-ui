@@ -4,24 +4,25 @@ Paquete centralizado de tokens de diseño, estilos y configuración de Tailwind 
 
 ## Requisitos
 
-- Angular 19+ (recomendado Angular 21)
-- PrimeNG 19+ (recomendado PrimeNG 21)
+- Angular 21+
+- PrimeNG 21+
 - Tailwind CSS 4+
 - Node.js 22+
 
 ## Instalación
 
-Requiere autenticación con GitHub Packages. Agrega un `.npmrc` en tu proyecto:
-
-```
-@zonikgraf:registry=https://npm.pkg.github.com
-//npm.pkg.github.com/:_authToken=TU_GITHUB_TOKEN
-```
-
-Luego instala:
+Puedes instalar esta biblioteca directamente desde GitHub:
 
 ```bash
-npm install tpp-theme-ui
+npm install github:zonikgraf/tpp-theme-ui
+```
+
+O agréguelo a su archivo `package.json`:
+
+```json
+"dependencies": {
+  "tpp-theme-ui": "github:zonikgraf/tpp-theme-ui"
+}
 ```
 
 ## Guía de Migración
@@ -150,16 +151,13 @@ Configuración del tema PrimeNG con tokens de diseño TPP para componentes como 
 
 ```bash
 # Actualiza la versión en package.json, luego:
-git tag v2.0.0
-git push origin v2.0.0
-# El workflow de GitHub Actions publicará automáticamente
+git tag v2.1.0
+git push origin v2.1.0
 ```
 
 ## Actualización en proyectos consumidores
 
-```bash
-npm update tpp-theme-ui
-```
+Actualiza el tag en tu `package.json` y ejecuta `npm install`.
 
 ## Notas Importantes
 
