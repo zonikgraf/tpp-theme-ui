@@ -44,19 +44,8 @@ Reemplaza el contenido de tu archivo `src/styles.css` con:
 
 - Elimina `tailwind.config.js` o `tailwind.config.ts`
 - Elimina `src/app/theme.ts` (ya no es necesario)
-- Elimina `postcss.config.js` si solo existía para Tailwind
 
-### 3. Crear `.postcssrc.json`
-
-```json
-{
-  "plugins": {
-    "@tailwindcss/postcss": {}
-  }
-}
-```
-
-### 4. Actualizar `app.config.ts`
+### 3. Actualizar `app.config.ts`
 
 **Importa** la configuración del tema y úsala con `providePrimeNG`:
 
