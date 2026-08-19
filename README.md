@@ -1,4 +1,4 @@
-# @zonikgraf/tpp-theme-ui
+# tpp-theme-ui
 
 Paquete centralizado de tokens de diseño, estilos y configuración de Tailwind CSS v4 y PrimeNG para optimizar el mantenimiento y consistencia visual en todos los microfrontends del ecosistema TPP.
 
@@ -21,7 +21,7 @@ Requiere autenticación con GitHub Packages. Agrega un `.npmrc` en tu proyecto:
 Luego instala:
 
 ```bash
-npm install @zonikgraf/tpp-theme-ui
+npm install tpp-theme-ui
 ```
 
 ## Guía de Migración
@@ -34,9 +34,9 @@ Reemplaza el contenido de tu archivo `src/styles.css` con:
 @import "tailwindcss";
 @import "tailwindcss-primeui";
 @import "@tabler/icons-webfont/dist/tabler-icons.min.css";
-@import "@zonikgraf/tpp-theme-ui/tpp.css";
+@import "tpp-theme-ui/tpp.css";
 
-@import "@zonikgraf/tpp-theme-ui/tailwind.css";
+@import "tpp-theme-ui/tailwind.css";
 ```
 
 ### 2. Eliminar archivos obsoletos
@@ -68,7 +68,7 @@ import Aura from '@primeng/themes/aura';
 import { definePreset } from '@primeng/themes';
 
 // Importa la configuración del tema TPP
-import { themeTppConfig } from '@zonikgraf/tpp-theme-ui/primeng';
+import { themeTppConfig } from 'tpp-theme-ui/primeng';
 
 import { routes } from './app.routes';
 
@@ -97,7 +97,7 @@ export const appConfig: ApplicationConfig = {
 ### Estilos TPP
 
 ```css
-@import "@zonikgraf/tpp-theme-ui/tpp.css";
+@import "tpp-theme-ui/tpp.css";
 ```
 
 Incluye todos los estilos personalizados de TPP: tokens, componentes, y utilidades globales.
@@ -105,7 +105,7 @@ Incluye todos los estilos personalizados de TPP: tokens, componentes, y utilidad
 ### Preset de Tailwind CSS v4
 
 ```css
-@import "@zonikgraf/tpp-theme-ui/tailwind.css";
+@import "tpp-theme-ui/tailwind.css";
 ```
 
 Configuración de Tailwind con paleta de colores TPP usando `@theme inline` directive. Los colores se resuelven en runtime desde las CSS variables de PrimeNG (`--p-primary-*`, `--p-surface-*`).
@@ -113,7 +113,7 @@ Configuración de Tailwind con paleta de colores TPP usando `@theme inline` dire
 ### Tema de PrimeNG
 
 ```typescript
-import { themeTppConfig } from '@zonikgraf/tpp-theme-ui/primeng';
+import { themeTppConfig } from 'tpp-theme-ui/primeng';
 ```
 
 Configuración del tema PrimeNG con tokens de diseño TPP para componentes como buttons, inputs, dialogs, tabs, etc.
@@ -158,7 +158,7 @@ git push origin v2.0.0
 ## Actualización en proyectos consumidores
 
 ```bash
-npm update @zonikgraf/tpp-theme-ui
+npm update tpp-theme-ui
 ```
 
 ## Notas Importantes

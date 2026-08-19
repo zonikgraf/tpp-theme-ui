@@ -1,5 +1,5 @@
 {
-  "name": "@zonikgraf/tpp-theme-ui",
+  "name": "tpp-theme-ui",
   "version": "2.0.0",
   "description": "Paquete centralizado de tokens de diseño, estilos y configuración de Tailwind CSS v4 y PrimeNG para optimizar el mantenimiento y consistencia visual en todos los microfrontends del ecosistema TPP.",
   "author": "zonikgraf",
