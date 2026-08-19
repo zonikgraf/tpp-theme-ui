@@ -245,9 +245,6 @@ components: {
   panel: {
     borderColor: '{surface.100}',
   },
-  fileupload: {
-    borderColor: '{surface.100}',
-  },
   select: {
     overlay: {
       borderColor: '{surface.100}',
