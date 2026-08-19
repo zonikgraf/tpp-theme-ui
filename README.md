@@ -1,6 +1,13 @@
 # @zonikgraf/tpp-theme-ui
 
-Paquete centralizado de tokens de diseño, estilos y configuración de Tailwind CSS y PrimeNG para optimizar el mantenimiento y consistencia visual en todos los microfrontends del ecosistema TPP.
+Paquete centralizado de tokens de diseño, estilos y configuración de Tailwind CSS v4 y PrimeNG para optimizar el mantenimiento y consistencia visual en todos los microfrontends del ecosistema TPP.
+
+## Requisitos
+
+- Angular 19+ (recomendado Angular 21)
+- PrimeNG 19+ (recomendado PrimeNG 21)
+- Tailwind CSS 4+
+- Node.js 22+
 
 ## Instalación
 
@@ -21,56 +28,36 @@ npm install @zonikgraf/tpp-theme-ui
 
 ### 1. Actualizar `styles.css`
 
-Elimina todos los estilos personalizados del archivo `src/styles.css` y reemplázalos con:
+Reemplaza el contenido de tu archivo `src/styles.css` con:
 
 ```css
-@import '@tabler/icons-webfont/dist/tabler-icons.min.css';
+@import "tailwindcss";
+@import "tailwindcss-primeui";
+@import "@tabler/icons-webfont/dist/tabler-icons.min.css";
+@import "@zonikgraf/tpp-theme-ui/tpp.css";
 
-@import '@zonikgraf/tpp-theme-ui/tpp.css';
-
-@layer tailwind-base, primeng, tailwind-utilities;
-
-@layer tailwind-base {
-  @tailwind base;
-}
-
-@layer tailwind-utilities {
-  @tailwind components;
-  @tailwind utilities;
-}
+@import "@zonikgraf/tpp-theme-ui/tailwind.css";
 ```
 
-### 2. Actualizar `tailwind.config.js`
+### 2. Eliminar archivos obsoletos
 
-**Elimina** toda la sección `theme.extend.colors` y las configuraciones personalizadas de keyframes/animaciones.
+- Elimina `tailwind.config.js` o `tailwind.config.ts`
+- Elimina `src/app/theme.ts` (ya no es necesario)
+- Elimina `postcss.config.js` si solo existía para Tailwind
 
-**Agrega** el preset del paquete. Tu archivo debe quedar así:
+### 3. Crear `.postcssrc.json`
 
-```javascript
-/** @type {import('tailwindcss').Config} */
-
-import PrimeUI from 'tailwindcss-primeui';
-
-module.exports = {
-  presets: [
-    require('@zonikgraf/tpp-theme-ui/tailwind')
-  ],
-  content: [
-    "./src/**/*.{html,ts,tsx,js,jsx}",
-    "./src/**/*.component.html",
-    "./src/**/*.component.ts",
-  ],
-  plugins: [PrimeUI],
+```json
+{
+  "plugins": {
+    "@tailwindcss/postcss": {}
+  }
 }
 ```
-
-### 3. Eliminar archivo de tema personalizado
-
-Elimina el archivo `src/app/theme.ts` (ya no es necesario).
 
 ### 4. Actualizar `app.config.ts`
 
-**Importa** la configuración del tema:
+**Importa** la configuración del tema y úsala con `providePrimeNG`:
 
 ```typescript
 import { ApplicationConfig, provideZoneChangeDetection } from '@angular/core';
@@ -108,52 +95,63 @@ export const appConfig: ApplicationConfig = {
 ## Contenido del Paquete
 
 ### Estilos TPP
-```typescript
-import '@zonikgraf/tpp-theme-ui/tpp.css';
+
+```css
+@import "@zonikgraf/tpp-theme-ui/tpp.css";
 ```
+
 Incluye todos los estilos personalizados de TPP: tokens, componentes, y utilidades globales.
 
-### Preset de Tailwind
-```javascript
-presets: [require('@zonikgraf/tpp-theme-ui/tailwind')]
+### Preset de Tailwind CSS v4
+
+```css
+@import "@zonikgraf/tpp-theme-ui/tailwind.css";
 ```
-Configuración completa de Tailwind con:
-- Paleta de colores TPP (primary, surface)
-- Paletas semánticas (red, green, yellow, blue)
-- Animaciones personalizadas (fadeInUp)
+
+Configuración de Tailwind con paleta de colores TPP usando `@theme inline` directive. Los colores se resuelven en runtime desde las CSS variables de PrimeNG (`--p-primary-*`, `--p-surface-*`).
 
 ### Tema de PrimeNG
+
 ```typescript
 import { themeTppConfig } from '@zonikgraf/tpp-theme-ui/primeng';
 ```
+
 Configuración del tema PrimeNG con tokens de diseño TPP para componentes como buttons, inputs, dialogs, tabs, etc.
 
 ## Paleta de Colores
 
-- **tpp-primary**: `50, 100, 200, 300, 400, 500, 600, 700, 800, 900`
-- **tpp-surface**: `25, 50, 100, 200, 300, 400, 500, 600, 700, 800, 900, 950`
-- **red**: `50 → 900` (error/peligro)
-- **green**: `50 → 900` (éxito/completado)
-- **yellow**: `50 → 900` (advertencia)
-- **blue**: `50 → 900` (informativo)
 
-### Uso en Tailwind
+### Uso con nombres base (aliases)
+
 ```html
-<div class="bg-tpp-primary-500 text-white">
-  Botón primario
-</div>
-
-<div class="bg-tpp-surface-50 text-tpp-surface-900">
-  Superficie clara
-</div>
+<div class="bg-primary-500 text-white">Botón primario</div>
+<div class="bg-surface-50 text-surface-900">Superficie clara</div>
 ```
+
+### Colores disponibles
+
+| Prefijo | Valores |
+|---------|---------|
+| `primary` | `50, 100, 200, 300, 400, 500, 600, 700, 800, 900, 950` |
+| `surface` | `0, 25, 50, 100, 200, 300, 400, 500, 600, 700, 800, 900, 950` |
+| `gray` | `50, 100, 200, 300, 400, 500, 600, 700, 800, 900, 950` |
+| `green` | `50, 100, 200, 300, 400, 500, 600, 700, 800, 900, 950` |
+| `yellow` | `50, 100, 200, 300, 400, 500, 600, 700, 800, 900, 950` |
+| `red` | `50, 100, 200, 300, 400, 500, 600, 700, 800, 900, 950` |
+| `blue` | `50, 100, 200, 300, 400, 500, 600, 700, 800, 900, 950` |
+
+### Animaciones
+
+| Clase | Descripción |
+|-------|-------------|
+| `animate-fade-in-up` | Animación de entrada desde abajo |
 
 ## Publicar nueva versión
 
 ```bash
 # Actualiza la versión en package.json, luego:
-git tag v1.0.2
-git push origin v1.0.2
+git tag v2.0.0
+git push origin v2.0.0
 # El workflow de GitHub Actions publicará automáticamente
 ```
 
@@ -167,8 +165,10 @@ npm update @zonikgraf/tpp-theme-ui
 
 - Asegúrate de eliminar cualquier configuración de tema duplicada en tu proyecto
 - Los estilos globales ahora se gestionan centralmente
+- Usa el plugin `tailwindcss-primeui` para acceder a los tokens de PrimeNG como utilidades de Tailwind
+- Los colores TPP mapean directamente a las CSS variables de PrimeNG (`--p-primary-*`, `--p-surface-*`)
+- El archivo `tailwind.css` usa `@theme inline` para evitar que Tailwind resuelva las variables CSS en build time. Los colores se resuelven en runtime cuando PrimeNG inyecta sus variables `--p-*`.
 - Cualquier personalización adicional debe hacerse después de importar los estilos del paquete
-- Si necesitas sobrescribir estilos, usa capas de Tailwind o especificidad CSS
 
 ## Licencia
 

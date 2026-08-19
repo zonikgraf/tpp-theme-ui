@@ -57,6 +57,10 @@
   border-color: var(--p-green-200);
 }
 
+.p-tag-primary {
+  border-color: var(--p-primary-200);
+}
+
 .p-tag-danger {
   border-color: var(--p-red-200);
 }
@@ -93,10 +97,7 @@
   font-weight: normal;
 }
 
-.tpp-datepicker-dashboard {
-  width: 100%;
-}
-
+.tpp-datepicker-dashboard,
 .tpp-datepicker-dashboard .p-datepicker {
   width: 100%;
 }

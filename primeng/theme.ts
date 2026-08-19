@@ -102,163 +102,163 @@ semantic: {
     },
   },
   },
-  components: {
-    button: {
-      colorScheme: {
-        light: {
-          outlined: {
-            secondary: {
-              borderColor: '{surface.100}',
-            },
-          },
-          raisedShadow: '0 3px 1px -2px rgba(157,163,169,0.10), 0 2px 2px 0 rgba(157,163,169,0.07), 0 1px 5px 0 rgba(157,163,169,0.06)',
-        },
-      },
-    },
-    datatable: {
-      headerCell: {
-        background: '{surface.25}',
-        borderColor: '{surface.100}',
-        sm: {
-          padding: '.85rem .75rem',
-        },
-      },
-      bodyCell: {
-        sm: {
-          padding: '.5rem .7rem',
-        },
-      },
-      footerCell: {
-        background: '{surface.25}',
-        borderColor: '{surface.100}',
-      },
-      row: {
-        hoverBackground: '{surface.25}',
-      },
-    },
-    tag: {
-      fontSize: '0.75rem',
-      fontWeight: '600',
-    },
-    dialog: {
-      borderColor: 'transparent',
-      header: {
-        padding: '.5rem 1.25rem',
-      },
-      content: {
-        padding: '1.25rem',
-      },
-    },
-    message: {
-      text: {
-        fontSize: '0.75rem',
-        sm: {
-          fontSize: '0.75rem',
-        },
-      },
-    },
-    autocomplete: {
-      colorScheme: {
-        light: {
-          dropdown: {
-            background: 'white',
-            hoverBackground: '{surface.25}',
-            activeBackground: '{surface.50}',
-            color: '{surface.400}',
+components: {
+  button: {
+    colorScheme: {
+      light: {
+        outlined: {
+          secondary: {
+            borderColor: '{surface.100}',
           },
         },
+        raisedShadow: '0 3px 1px -2px rgba(157,163,169,0.10), 0 2px 2px 0 rgba(157,163,169,0.07), 0 1px 5px 0 rgba(157,163,169,0.06)',
       },
-    },
-    selectbutton: {
-      borderRadius: '5rem',
-    },
-    togglebutton: {
-      sm: {
-        padding: '0.25rem 0',
-      },
-      content: {
-        borderRadius: '25rem',
-        sm: {
-          padding: '0.075rem 0.65rem',
-        },
-        checkedShadow: '0px 1px 3px 0px rgba(0,0,0,0.10), 0px 1px 2px 0px rgba(0,0,0,0.06)',
-      },
-    },
-    toggleswitch: {
-      width: '2.15rem',
-      height: '1.15rem',
-      handleSize: '.75rem',
-    },
-    radiobutton: {
-      icon: {
-        size: '0.65rem',
-      },
-    },
-    tooltip: {
-      padding: '0.25rem 0.5rem',
-      background: '{surface.700}',
-    },
-    popover: {
-      borderColor: '{surface.100}',
-    },
-    menu: {
-      borderColor: '{surface.100}',
-      shadow: '0px 10px 15px -3px rgba(0,0,0,0.10), 0px 4px 6px -2px rgba(0,0,0,0.05)',
-    },
-    toast: {
-      colorScheme: {
-        light: {
-          success: {
-            shadow: '0px 10px 15px -3px rgba(104,145,43,0.1), 0px 4px 6px -2px rgba(104,145,43,0.10)',
-          },
-          warn: {
-            shadow: '0px 10px 15px -3px rgba(166,127,2,0.1), 0px 4px 6px -2px rgba(166,127,2,0.10)',
-          },
-          error: {
-            shadow: '0px 10px 15px -3px rgba(220,38,38,0.1), 0px 4px 6px -2px rgba(220,38,38,0.10)',
-          },
-        },
-      },
-    },
-    accordion: {
-      header: {
-        background: '{surface.600}',
-        color: '{surface.200}',
-        padding: '.5rem',
-        hoverBackground: '{surface.500}',
-        hoverColor: 'white',
-        activeBackground: '{surface.700}',
-        activeColor: '{surface.200}',
-        activeHoverBackground: '{surface.500}',
-        activeHoverColor: 'white',
-      },
-      content: {
-        background: '{surface.700}',
-        color: '{surface.200}',
-      },
-    },
-    drawer: {
-      title: {
-        fontSize: '1.25rem',
-      },
-    },
-    panel: {
-      borderColor: '{surface.100}',
-    },
-    fileupload: {
-      borderColor: '{surface.100}',
-    },
-    select: {
-      overlay: {
-        borderColor: '{surface.100}',
-      },
-      focusBorderColor: '{surface.300}',
-    },
-    textarea: {
-      focusBorderColor: '{surface.300}',
-    },
-    icon: {
-      size: '0.15rem',
     },
   },
+  datatable: {
+    headerCell: {
+      background: '{surface.25}',
+      borderColor: '{surface.100}',
+      sm: {
+        padding: '.85rem .75rem',
+      },
+    },
+    bodyCell: {
+      sm: {
+        padding: '.5rem .7rem',
+      },
+    },
+    footerCell: {
+      background: '{surface.25}',
+      borderColor: '{surface.100}',
+    },
+    row: {
+      hoverBackground: '{surface.25}',
+    },
+  },
+  tag: {
+    fontSize: '0.75rem',
+    fontWeight: '600',
+  },
+  dialog: {
+    borderColor: 'transparent',
+    header: {
+      padding: '.5rem 1.25rem',
+    },
+    content: {
+      padding: '1.25rem',
+    },
+  },
+  message: {
+    text: {
+      fontSize: '0.75rem',
+      sm: {
+        fontSize: '0.75rem',
+      },
+    },
+  },
+  autocomplete: {
+    colorScheme: {
+      light: {
+        dropdown: {
+          background: 'white',
+          hoverBackground: '{surface.25}',
+          activeBackground: '{surface.50}',
+          color: '{surface.400}',
+        },
+      },
+    },
+  },
+  selectbutton: {
+    borderRadius: '5rem',
+  },
+  togglebutton: {
+    sm: {
+      padding: '0.25rem 0',
+    },
+    content: {
+      borderRadius: '25rem',
+      sm: {
+        padding: '0.075rem 0.65rem',
+      },
+      checkedShadow: '0px 1px 3px 0px rgba(0,0,0,0.10), 0px 1px 2px 0px rgba(0,0,0,0.06)',
+    },
+  },
+  toggleswitch: {
+    width: '2.15rem',
+    height: '1.15rem',
+    handleSize: '.75rem',
+  },
+  radiobutton: {
+    icon: {
+      size: '0.65rem',
+    },
+  },
+  tooltip: {
+    padding: '0.25rem 0.5rem',
+    background: '{surface.700}',
+  },
+  popover: {
+    borderColor: '{surface.100}',
+  },
+  menu: {
+    borderColor: '{surface.100}',
+    shadow: '0px 10px 15px -3px rgba(0,0,0,0.10), 0px 4px 6px -2px rgba(0,0,0,0.05)',
+  },
+  toast: {
+    colorScheme: {
+      light: {
+        success: {
+          shadow: '0px 10px 15px -3px rgba(104,145,43,0.1), 0px 4px 6px -2px rgba(104,145,43,0.10)',
+        },
+        warn: {
+          shadow: '0px 10px 15px -3px rgba(166,127,2,0.1), 0px 4px 6px -2px rgba(166,127,2,0.10)',
+        },
+        error: {
+          shadow: '0px 10px 15px -3px rgba(220,38,38,0.1), 0px 4px 6px -2px rgba(220,38,38,0.10)',
+        },
+      },
+    },
+  },
+  accordion: {
+    header: {
+      background: '{surface.600}',
+      color: '{surface.200}',
+      padding: '.5rem',
+      hoverBackground: '{surface.500}',
+      hoverColor: 'white',
+      activeBackground: '{surface.700}',
+      activeColor: '{surface.200}',
+      activeHoverBackground: '{surface.500}',
+      activeHoverColor: 'white',
+    },
+    content: {
+      background: '{surface.700}',
+      color: '{surface.200}',
+    },
+  },
+  drawer: {
+    title: {
+      fontSize: '1.25rem',
+    },
+  },
+  panel: {
+    borderColor: '{surface.100}',
+  },
+  fileupload: {
+    borderColor: '{surface.100}',
+  },
+  select: {
+    overlay: {
+      borderColor: '{surface.100}',
+    },
+    focusBorderColor: '{surface.300}',
+  },
+  textarea: {
+    focusBorderColor: '{surface.300}',
+  },
+  icon: {
+    size: '0.15rem',
+  },
+},
 };
