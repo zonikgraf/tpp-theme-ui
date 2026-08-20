@@ -111,7 +111,9 @@ export const themeTppConfig = {
               borderColor: '{surface.100}',
             },
           },
-          raisedShadow: '0 3px 1px -2px rgba(157,163,169,0.10), 0 2px 2px 0 rgba(157,163,169,0.07), 0 1px 5px 0 rgba(157,163,169,0.06)',
+          root: {
+            raisedShadow: '0 3px 1px -2px rgba(157,163,169,0.10), 0 2px 2px 0 rgba(157,163,169,0.07), 0 1px 5px 0 rgba(157,163,169,0.06)',
+          },
         },
       },
     },
@@ -137,11 +139,15 @@ export const themeTppConfig = {
       },
     },
     tag: {
-      fontSize: '0.75rem',
-      fontWeight: '600',
+      root: {
+        fontSize: '0.75rem',
+        fontWeight: '600',
+      },
     },
     dialog: {
-      borderColor: 'transparent',
+      root: {
+        borderColor: 'transparent',
+      },
       header: {
         padding: '.5rem 1.25rem',
       },
@@ -170,11 +176,15 @@ export const themeTppConfig = {
       },
     },
     selectbutton: {
-      borderRadius: '5rem',
+      root: {
+        borderRadius: '5rem',
+      },
     },
     togglebutton: {
-      sm: {
-        padding: '0.25rem 0',
+      root: {
+        sm: {
+          padding: '0.25rem 0',
+        },
       },
       content: {
         borderRadius: '25rem',
@@ -185,9 +195,13 @@ export const themeTppConfig = {
       },
     },
     toggleswitch: {
-      width: '2.15rem',
-      height: '1.15rem',
-      handleSize: '.75rem',
+      root: {
+        width: '2.15rem',
+        height: '1.15rem',
+      },
+      handle: {
+        size: '.75rem',
+      },
     },
     radiobutton: {
       icon: {
@@ -195,15 +209,21 @@ export const themeTppConfig = {
       },
     },
     tooltip: {
-      padding: '0.25rem 0.5rem',
-      background: '{surface.700}',
+      root: {
+        padding: '0.25rem 0.5rem',
+        background: '{surface.700}',
+      },
     },
     popover: {
-      borderColor: '{surface.100}',
+      root: {
+        borderColor: '{surface.100}',
+      },
     },
     menu: {
-      borderColor: '{surface.100}',
-      shadow: '0px 10px 15px -3px rgba(0,0,0,0.10), 0px 4px 6px -2px rgba(0,0,0,0.05)',
+      root: {
+        borderColor: '{surface.100}',
+        shadow: '0px 10px 15px -3px rgba(0,0,0,0.10), 0px 4px 6px -2px rgba(0,0,0,0.05)',
+      },
     },
     toast: {
       colorScheme: {
@@ -243,25 +263,30 @@ export const themeTppConfig = {
       },
     },
     panel: {
-      borderColor: '{surface.100}',
+      root: {
+        borderColor: '{surface.100}',
+      },
     },
     select: {
+      root: {
+        focusBorderColor: '{surface.300}',
+      },
       overlay: {
         borderColor: '{surface.100}',
       },
-      focusBorderColor: '{surface.300}',
     },
     textarea: {
-      focusBorderColor: '{surface.300}',
+      root: {
+        focusBorderColor: '{surface.300}',
+      },
     },
     icon: {
       size: '0.15rem',
     },
     fileupload: {
-      borderColor: '{surface.100}',
-      hoverBorderColor: '{surface.200}',
-      focusBorderColor: '{surface.300}',
-      invalidBorderColor: '{red.500}',
+      root: {
+        borderColor: '{surface.100}',
+      },
     },
   },
-};
+}
