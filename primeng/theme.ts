@@ -280,9 +280,6 @@ export const themeTppConfig = {
         focusBorderColor: '{surface.300}',
       },
     },
-    icon: {
-      size: '0.15rem',
-    },
     fileupload: {
       root: {
         borderColor: '{surface.100}',

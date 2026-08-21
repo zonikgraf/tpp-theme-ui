@@ -1,7 +1,7 @@
 {
   "name": "tpp-theme-ui",
-  "version": "2.0.0",
-  "description": "Paquete centralizado de tokens de diseño, estilos y configuración de Tailwind CSS v4 y PrimeNG para optimizar el mantenimiento y consistencia visual en todos los microfrontends del ecosistema TPP.",
+  "version": "3.0.0",
+  "description": "Paquete centralizado de tokens de diseño, estilos y configuración de Tailwind CSS 3 y PrimeNG para optimizar el mantenimiento y consistencia visual en todos los microfrontends del ecosistema TPP.",
   "author": "zonikgraf",
   "license": "MIT",
   "scripts": {
@@ -9,7 +9,7 @@
   },
   "exports": {
     "./tpp.css": "./tpp/tpp.css",
-    "./tailwind.css": "./tailwind/tailwind.css",
+    "./tailwind": "./tailwind/tailwind.preset.js",
     "./primeng": "./primeng/theme.ts"
   },
   "files": [
@@ -19,23 +19,10 @@
     "assets"
   ],
   "peerDependencies": {
-    "primeng": ">=19.0.0",
-    "tailwindcss": ">=4.0.0",
-    "tailwindcss-primeui": ">=0.5.0"
-  },
-  "peerDependenciesMeta": {
-    "tailwindcss": {
-      "optional": true
-    },
-    "tailwindcss-primeui": {
-      "optional": true
-    }
+    "primeng": ">=21.0.0"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/zonikgraf/tpp-theme-ui.git"
-  },
-  "publishConfig": {
-    "@zonikgraf:registry": "https://npm.pkg.github.com"
   }
 }
