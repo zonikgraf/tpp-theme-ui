@@ -319,34 +319,3 @@
 .p-inputchips-input-item input {
   font-size: 0.875rem;
 }
-
-.p-carousel-indicator-button {
-  width: 0.5rem;
-}
-
-.p-carousel-indicator-active .p-carousel-indicator-button {
-  width: 1rem;
-}
-
-.carousel-container {
-  width: 100%;
-  overflow: hidden;
-}
-
-.p-carousel-viewport {
-  padding: 0 3%;
-  scrollbar-width: none;
-}
-
-.p-carousel-item {
-  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-  opacity: 0.6;
-  transform: scale(0.99);
-}
-
-.p-carousel-item-active {
-  opacity: 1;
-  transform: scale(1);
-  filter: blur(0);
-  z-index: 10;
-}
