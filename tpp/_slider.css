@@ -1,0 +1,36 @@
+/* ========================================
+   SLIDER TARJETAS
+======================================== */
+
+.tpp-slider-tarjetas {
+  gap: 1rem;
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  /* scrollbar-width: none; */
+  -ms-overflow-style: none;
+}
+
+.tpp-slider-tarjetas::-webkit-scrollbar {
+  display: none;
+}
+
+.tpp-slider-tarjetas > * {
+  flex-shrink: 0;
+  width: min(75vw, 18rem);
+  scroll-snap-align: center;
+}
+
+@media (min-width: 768px) {
+  .tpp-slider-tarjetas {
+    display: grid;
+    overflow-x: visible;
+    scroll-snap-type: none;
+  }
+
+  .tpp-slider-tarjetas > * {
+    width: auto;
+    flex-shrink: 1;
+    scroll-snap-align: none;
+  }
+}
