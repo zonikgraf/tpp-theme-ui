@@ -73,7 +73,8 @@
   border-color: var(--p-surface-200);
 }
 
-.p-tag-warning {
+.p-tag-warning,
+.p-tag-warn {
   color: var(--p-yellow-700);
   background: var(--p-yellow-50);
   border-color: var(--p-yellow-200);
@@ -170,7 +171,7 @@
 .p-select-header {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
-  border-bottom: 1px solid;
+  border-bottom: 1px solid var(--p-surface-100);
 }
 
 .p-select-header .p-iconfield {

@@ -157,12 +157,6 @@ Configuración del tema PrimeNG con tokens de diseño TPP para componentes como 
 | `red` | `50, 100, 200, 300, 400, 500, 600, 700, 800, 900, 950` |
 | `blue` | `50, 100, 200, 300, 400, 500, 600, 700, 800, 900, 950` |
 
-### Animaciones
-
-| Clase | Descripción |
-|-------|-------------|
-| `animate-fade-in-up` | Animación de entrada desde abajo |
-
 ## Publicar nueva versión
 
 ```bash
