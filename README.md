@@ -63,9 +63,7 @@ module.exports = {
     require('tpp-theme-ui/tailwind')
   ],
   content: [
-    "./src/**/*.{html,ts,tsx,js,jsx}",
-    "./src/**/*.component.html",
-    "./src/**/*.component.ts",
+    "./src/**/*.{html,ts,tsx,js,jsx}"
   ],
   plugins: [PrimeUI],
 }
@@ -102,7 +100,7 @@ export const appConfig: ApplicationConfig = {
       theme: {
         preset: themeTpp,
         options: {
-          darkModeSelector: false || 'none',
+          darkModeSelector: false,
         }
       }
     })
